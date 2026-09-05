@@ -1,0 +1,146 @@
+{
+  "engine_label": "Deterministic Sandbox Engine",
+  "total_at_risk": 1610520.43,
+  "total_recovered_gross": 995546.12,
+  "total_incremental_recovery": 566870.04,
+  "total_incremental_lift_pct": 35.2,
+  "net_recovery": 564576.54,
+  "arms": [
+    {
+      "name": "CONTROL",
+      "gross_recovery": 428676.08,
+      "incremental": 0.0,
+      "lift_pct": 0.0,
+      "cost": 0.0,
+      "net": 428676.08,
+      "duplicate_charges": 0,
+      "status": "PASSED"
+    },
+    {
+      "name": "NAIVE",
+      "gross_recovery": 260040.21,
+      "incremental": -168635.87,
+      "lift_pct": -10.47,
+      "cost": 300.0,
+      "net": -168935.87,
+      "duplicate_charges": 9,
+      "status": "FAILED"
+    },
+    {
+      "name": "RULES",
+      "gross_recovery": 770418.91,
+      "incremental": 341742.83,
+      "lift_pct": 21.22,
+      "cost": 694.5,
+      "net": 341048.33,
+      "duplicate_charges": 0,
+      "status": "PASSED"
+    },
+    {
+      "name": "AGENT",
+      "gross_recovery": 995546.12,
+      "incremental": 566870.04,
+      "lift_pct": 35.2,
+      "cost": 2293.5,
+      "net": 564576.54,
+      "duplicate_charges": 0,
+      "status": "PASSED"
+    }
+  ],
+  "action_mix": [
+    {
+      "action": "HUMAN_REVIEW",
+      "count": 49
+    },
+    {
+      "action": "PAYMENT_LINK",
+      "count": 25
+    },
+    {
+      "action": "DELAYED_RETRY",
+      "count": 17
+    },
+    {
+      "action": "BLOCK",
+      "count": 9
+    }
+  ],
+  "recent_ledger_events": [
+    {
+      "event_id": "evt_000751",
+      "case_id": "case_0099",
+      "event_type": "DIAGNOSIS_RECORDED",
+      "timestamp": "2026-09-05T03:56:51.095331+00:00",
+      "payload_summary": "case_id: case_0099, root_cause: INSUFFICIENT_FUNDS, confidence: 0.97"
+    },
+    {
+      "event_id": "evt_000752",
+      "case_id": "case_0099",
+      "event_type": "DECISION_EVALUATED",
+      "timestamp": "2026-09-05T03:56:51.095596+00:00",
+      "payload_summary": "case_id: case_0099, action: HUMAN_REVIEW, routing: HUMAN"
+    },
+    {
+      "event_id": "evt_000753",
+      "case_id": "case_0099",
+      "event_type": "EXECUTION_DISPATCHED",
+      "timestamp": "2026-09-05T03:56:51.095681+00:00",
+      "payload_summary": "case_id: case_0099, action_type: HUMAN_REVIEW, status: QUEUED_FOR_OPERATIONS_DESK"
+    },
+    {
+      "event_id": "evt_000754",
+      "case_id": "case_0099",
+      "event_type": "WEBHOOK_SETTLEMENT_VERIFIED",
+      "timestamp": "2026-09-05T03:56:51.095755+00:00",
+      "payload_summary": "is_verified_recovered: True, state_changed: True, final_payment_state: SUCCESS"
+    },
+    {
+      "event_id": "evt_000755",
+      "case_id": "case_0099",
+      "event_type": "RECONCILIATION_COMPLETED",
+      "timestamp": "2026-09-05T03:56:51.095795+00:00",
+      "payload_summary": "case_id: case_0099, mismatch_type: None, resolution_action: NONE"
+    },
+    {
+      "event_id": "evt_000756",
+      "case_id": "case_0100",
+      "event_type": "DIAGNOSIS_RECORDED",
+      "timestamp": "2026-09-05T03:56:51.095872+00:00",
+      "payload_summary": "case_id: case_0100, root_cause: AMBIGUOUS_DEBIT_NETWORK_TIMEOUT, confidence: 0.96"
+    },
+    {
+      "event_id": "evt_000757",
+      "case_id": "case_0100",
+      "event_type": "DECISION_EVALUATED",
+      "timestamp": "2026-09-05T03:56:51.095913+00:00",
+      "payload_summary": "case_id: case_0100, action: HUMAN_REVIEW, routing: HUMAN"
+    },
+    {
+      "event_id": "evt_000758",
+      "case_id": "case_0100",
+      "event_type": "EXECUTION_DISPATCHED",
+      "timestamp": "2026-09-05T03:56:51.095960+00:00",
+      "payload_summary": "case_id: case_0100, action_type: HUMAN_REVIEW, status: QUEUED_FOR_OPERATIONS_DESK"
+    },
+    {
+      "event_id": "evt_000759",
+      "case_id": "case_0100",
+      "event_type": "WEBHOOK_SETTLEMENT_VERIFIED",
+      "timestamp": "2026-09-05T03:56:51.096003+00:00",
+      "payload_summary": "is_verified_recovered: True, state_changed: True, final_payment_state: SUCCESS"
+    },
+    {
+      "event_id": "evt_000760",
+      "case_id": "case_0100",
+      "event_type": "RECONCILIATION_COMPLETED",
+      "timestamp": "2026-09-05T03:56:51.096034+00:00",
+      "payload_summary": "case_id: case_0100, mismatch_type: None, resolution_action: NONE"
+    }
+  ],
+  "decision_engine_stats": {
+    "diagnosis_accuracy_rules_pct": 100.0,
+    "human_reviews_count": 49,
+    "guardrail_blocks_count": 15,
+    "ambiguous_reconciled_count": 12
+  }
+}

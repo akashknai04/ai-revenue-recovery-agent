@@ -1,3 +1,11 @@
+# AI Revenue Recovery Agent
+
+> **Razorpay AI Buildathon 2026 — Track 03: AI Revenue Recovery**  
+> 📌 **Quick Links:** [Start here for the 2-minute version](./EXECUTIVE_SUMMARY.md) | [Run it yourself in 5 minutes](./DEMO_RUNBOOK.md) | [5-Minute Pitch Script](./PITCH_VIDEO_SCRIPT.md) | [Live Dashboard (optional visualization)](https://akashknai04.github.io/revenue-recovery-dashboard/)  
+> *The live dashboard is a read-only visualization of this repository's real, verified evaluation output (source: [revenue-recovery-dashboard](https://github.com/akashknai04/revenue-recovery-dashboard)). It uses a simulated sandbox engine, not a live payment integration. All logic, tests, and verification live in this repository.*  
+> 💰 **Headline Result:** **Verified incremental recovery: ₹566,870.04 (+35.20% lift over control)**, 100% reproducible and ledger-traceable with zero safety violations.
+
+---
 
 **Headline numbers (Batch B, seed 2002, 100 cases):**
 
