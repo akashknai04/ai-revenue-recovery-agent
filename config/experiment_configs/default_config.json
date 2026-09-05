@@ -1,0 +1,14 @@
+{
+  "config_version": "1.0.0",
+  "batch_a_seed": 1001,
+  "batch_a_size": 50,
+  "batch_b_seed": 2002,
+  "batch_b_size": 100,
+  "max_retries": 3,
+  "max_contacts": 2,
+  "high_value_threshold": 50000.0,
+  "contact_hours": {
+    "start_hour": 9,
+    "end_hour": 21
+  }
+}

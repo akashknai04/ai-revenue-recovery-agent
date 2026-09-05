@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AI Revenue Recovery Agent — Batch Report</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 1000px; margin: 40px auto; padding: 0 20px; color: #24292e; background-color: #fafbfc; }
+h1, h2, h3 { color: #0366d6; }
+table { border-collapse: collapse; width: 100%; margin: 20px 0; background: #fff; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+th, td { border: 1px solid #e1e4e8; padding: 10px 14px; text-align: left; }
+th { background-color: #f6f8fa; font-weight: 600; }
+.badge-pass { background-color: #28a745; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; }
+.badge-fail { background-color: #d73a49; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.85em; }
+.highlight { background-color: #f1f8ff; border-left: 4px solid #0366d6; padding: 12px 16px; margin: 20px 0; }
+pre { background: #f6f8fa; padding: 12px; border-radius: 6px; overflow-x: auto; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<h1>AI Revenue Recovery Agent — 4-Arm Batch Evaluation Report</h1>
+<p><strong>Experiment Seed:</strong> 2002 | <strong>Batch:</strong> Batch_B</p>
+<p><strong>Safety Status by Arm:</strong> AGENT: <span class="badge-pass">PASSED</span> | NAIVE: <span class="badge-fail">FAILED (9 violations)</span> | RULES: <span class="badge-pass">PASSED</span> | CONTROL: <span class="badge-pass">PASSED</span></p>
+
+<div class="highlight">
+<h3>Honest Incremental Recovery Principle</h3>
+<p>AI recovery performance is strictly computed as <strong>Incremental Recovery Lift = (Agent Outcome − Control Natural Recovery)</strong>. Natural recoveries are never attributed to AI.</p>
+<p><strong>Headline Incremental Recovery:</strong> ₹566,870.04 (+35.20% lift over control)</p>
+<p><strong>Net Money Recovered:</strong> ₹564,576.54 (after ₹2,293.50 operating costs)</p>
+</div>
+
+<h2>4-Arm Comparison</h2>
+<table>
+<tr>
+  <th>Metric</th>
+  <th>CONTROL</th>
+  <th>NAIVE</th>
+  <th>RULES</th>
+  <th>AGENT</th>
+</tr>
+<tr>
+  <td>Gross Recovery</td>
+  <td>₹428,676.08</td>
+  <td>₹260,040.21</td>
+  <td>₹770,418.91</td>
+  <td><strong>₹995,546.12</strong></td>
+</tr>
+<tr>
+  <td>Incremental Lift over Control</td>
+  <td>₹0.00</td>
+  <td>-₹168,635.87</td>
+  <td>₹341,742.83</td>
+  <td><strong>₹566,870.04</strong></td>
+</tr>
+<tr>
+  <td>Net Recovered Value</td>
+  <td>₹428,676.08</td>
+  <td>-₹168,935.87</td>
+  <td>₹341,048.33</td>
+  <td><strong>₹564,576.54</strong></td>
+</tr>
+<tr>
+  <td>Duplicate Charges</td>
+  <td>0</td>
+  <td><span class="badge-fail">9</span></td>
+  <td>0</td>
+  <td><span class="badge-pass">0</span></td>
+</tr>
+<tr>
+  <td>Safety Status</td>
+  <td>PASSED</td>
+  <td><span class="badge-fail">FAILED</span></td>
+  <td>PASSED</td>
+  <td><span class="badge-pass">PASSED</span></td>
+</tr>
+</table>
+
+<h2>Diagnosis Accuracy & Architectural Disclosure</h2>
+<p>Rules Baseline: <strong>100.00%</strong> | LLM Diagnosis: <strong>100.00%</strong></p>
+<p><em>Disclosure: The current diagnosis layer in <code>llm/client.py</code> operates as a deterministic local stand-in for the LLM interface (zero external API calls). Because root-cause diagnosis output is identical between the RULES and AGENT arms across all cases, the lift gap between RULES (+21.22%) and AGENT (+35.20%) is driven entirely by downstream decisioning (EV ranking, risk weighting, guardrails, and action selection), not by diagnosis quality.</em></p>
+
+<h2>Audit Trail</h2>
+<p>Total events recorded in append-only ledger: <strong>761</strong>.</p>
+</body>
+</html>

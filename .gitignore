@@ -1,0 +1,28 @@
+﻿# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest & test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Keep persistent deterministic diagnosis audit cache committed
+!llm/diagnoses.jsonl
