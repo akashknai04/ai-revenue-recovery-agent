@@ -1,6 +1,6 @@
 # AI Revenue Recovery Agent — 4-Arm Batch Evaluation Report
 **Experiment Seed:** `2002` | **Config Version:** `1.0.0` | **Batch:** `Batch_B`  
-**Evaluation Timestamp:** `2026-09-05T02:23:01.034618+00:00`  
+**Evaluation Timestamp:** `2026-09-05T17:20:25.805107+00:00`  
 
 ### Safety Invariant Status by Arm (Rule 7 Compliance):
 - **AGENT Arm:** <span style="color:green">**PASSED**</span> (0 duplicate charges, 0 off-hours contacts, 100% compliant)
@@ -87,13 +87,13 @@ Every single decision, state transition, and financial verification in the metri
 | Event ID | Case ID | Event Type | Prev Hash Anchor |
 | :--- | :--- | :--- | :--- |
 | `evt_000000` | `case_0001` | `CONTROL_ARM_EVALUATION` | `0000000000000000...` |
-| `evt_000001` | `case_0002` | `CONTROL_ARM_EVALUATION` | `8ea9eba16ab1363a...` |
-| `evt_000002` | `case_0003` | `CONTROL_ARM_EVALUATION` | `6059937ffb2429b9...` |
-| `evt_000003` | `case_0004` | `CONTROL_ARM_EVALUATION` | `2d290600f3ef700c...` |
-| `evt_000004` | `case_0005` | `CONTROL_ARM_EVALUATION` | `30c0c2b1895fb17c...` |
-| `evt_000005` | `case_0006` | `CONTROL_ARM_EVALUATION` | `4709a938545f935c...` |
-| `evt_000006` | `case_0007` | `CONTROL_ARM_EVALUATION` | `d59b1260007add34...` |
-| `evt_000007` | `case_0008` | `CONTROL_ARM_EVALUATION` | `80547607b68ccdfd...` |
+| `evt_000001` | `case_0002` | `CONTROL_ARM_EVALUATION` | `939cad82a0729750...` |
+| `evt_000002` | `case_0003` | `CONTROL_ARM_EVALUATION` | `8896a98a5bcfbe4d...` |
+| `evt_000003` | `case_0004` | `CONTROL_ARM_EVALUATION` | `99a357b2361c3fd4...` |
+| `evt_000004` | `case_0005` | `CONTROL_ARM_EVALUATION` | `63fadf695bbc38b6...` |
+| `evt_000005` | `case_0006` | `CONTROL_ARM_EVALUATION` | `4a69650915f58f61...` |
+| `evt_000006` | `case_0007` | `CONTROL_ARM_EVALUATION` | `83c47e1ca6c32db7...` |
+| `evt_000007` | `case_0008` | `CONTROL_ARM_EVALUATION` | `7e3e7a3dcb6e9717...` |
 
 *(Total events recorded in ledger for this run: `761`)*
 
